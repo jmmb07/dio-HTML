@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1>Módulo I - Explicações básicas sobre HTML</h1>
+    <hr/>
+    <h2 id="sumary">Sumário</h2>
+    <ol>
+        <li><a href="#html">O que é HTML?</a></li>
+        <li><a href="#clientserver">O que são <i>Clients</i> e <i>Servers</i>?</a></li>
+        <li><a href="#structure">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#tags">O que são <i>Tags</i>?</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ol>
+    <h2 id="html">O que é HTML?</h2>
+    <p>HTML significa <i>Hyper Text Markup Language</i>. É a linguagem de marcação padrão para criar páginas da Web, descrevendo a sua estrutura.
+    Basicamente, consiste em uma série de elementos, que informam ao navegador como exibir o conteúdo, rotulando partes do conteúdo como "isto é um título", 
+    "isto é um parágrafo", "isto é um link", etc.
+    </p>
+    <small><a href="#sumary">< Voltar ao início</a></small>
+
+    <h2 id="clientserver">O que são <i>Clients</i> e <i>Servers</i>?</h2>
+    <p>Lado do cliente e lado do servidor são termos de desenvolvimento da web que descrevem onde o código do aplicativo é executado. 
+        Grande parte da internet é baseada no modelo cliente-servidor. Nesse modelo, os dispositivos do usuário se comunicam por meio de uma rede com 
+        servidores localizados centralmente para obter os dados de que precisam, em vez de se comunicarem entre si. Dispositivos de usuários finais, 
+        como notebooks, smartphones e computadores desktop, são considerados "clientes" dos servidores, como se fossem clientes obtendo serviços de uma empresa.
+        Os dispositivos clientes enviam solicitações de páginas web ou aplicativos aos servidores e os servidores fornecem respostas.</p>
+    <small><a href="#sumary">< Voltar ao início</a></small>
+
+    <h2 id="structure">Como é uma estrutura básica de um HTML?</h2>
+    <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma estrutura básica de blocos essenciais:
+        <ul>
+            <li>Definição do documento (doctype)</li>
+            <li>Cabeça (head);</li>
+            <li>Corpo (body);</li>                  
+        </ul>
+        <h4><i>Doctype:</i></h4>
+        <p>O doctype é uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. 
+            Assim eles sabem o que fazer para mostrar seu site da melhor forma possível.
+        </p>
+        <h4><i>Head:</i></h4>
+        <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle 
+            do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo 
+            do cabeçalho fica delimitado entre a abertura e fechamento tag head.
+        </p>
+        <h4><i>Body:</i></h4>
+        <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, 
+            assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a 
+            apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo 
+            par de tags body e /body.
+        </p>
+        </p>
+    <small><a href="#sumary">< Voltar ao início</a></small>
+
+    <h2 id="tags">O que são <i>Tags</i>?</h2>
+    <p><i>Tags</i> HTML são utilizados para informar ao navegador que tipo de estrutura é está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.</p>
+    <p>A seguir, veremos o significado e exemplos de algumas <i>tags</i>:
+        <ul>
+            <li>Tag <i>h</i>: As tags h1 a h6 são usadas para definir cabeçalhos HTML.
+                <ol>
+                    <li><h1>Exemplo de cabeçalho H1</h1></li>
+                    <li><h2>Exemplo de cabeçalho H2</h2></li>
+                    <li><h3>Exemplo de cabeçalho H3</h3></li>
+                    <li><h4>Exemplo de cabeçalho H4</h4></li>
+                    <li><h5>Exemplo de cabeçalho H5</h5></li>
+                    <li><h6>Exemplo de cabeçalho H6</h6></li>
+                </ol>
+            </li>
+            <li>Tag <i>p</i>: é uma tag que define um <p>parágrafo.</p></li>
+            <li>Tag <i>mark</i>: Deixa o texto com uma <mark>marcação</mark>.</li>
+            <li>Tag <i>small</i>: Deixa o texto <small>pequeno</small>.</li>
+            <li>Tag <i>I</i>: Deixa o texto <i>itálico</i>.</li>
+            <li>Tag <i>u</i>: Deixa o texto <u>subllinhado</u>.</li>
+            <li>Tag <i>strong</i>: Deixa o texto <strong>em negrito</strong>.</li>
+            <li>Tag <i>ol</i>: Define uma lista ordenada. Exemplo:
+                <ol>
+                    <li>Item 1;</li>
+                    <li>Item 2;</li>
+                    <li>Item 3;</li>
+                </ol>
+            </li>  
+            <li>Tag <i>ul</i>: Define uma lista não ordenada. Exemplo:
+                <ul>
+                    <li>Item 1;</li>
+                    <li>Item 2;</li>
+                    <li>Item 3;</li>
+                </ul>
+            </li>  
+            <li>Tag <i>li</i>: É a tag que define um item de uma lista, podendo esta ser ordenada ou não.</li>
+            <li>Tag <i>a</i>: A tag define um hyperlink, que é usado para ligar de uma página para <a href="https://www.dio.me" target="_blank">outra</a>,ou para <a href="#sumary">outro espaço</a> dentro de uma própria página. </li>
+            <li>Tag <i>hr</i>: A tag define uma quebra temática em uma página HTML. Por exemplo, essa linha logo abaixo. <hr/></li>
+            <li>Tag <i>sub</i>: Escreve um texto na forma <sub>subscrita</sub>.</li>
+            <li>Tag <i>sup</i>: Escreve um texto na forma <sup>sobescrita</sup>.</li>
+            <li>Tag <i>blockquote</i>: A tag especifica uma seção citada de outra fonte. Por exemplo, segundo o <i>Wikipedia,</i>
+                <blockquote cite="https://pt.wikipedia.org/wiki/Sport_Club_Corinthians_Paulista">Sport Club Corinthians Paulista é um clube poliesportivo brasileiro da cidade de São Paulo, capital do estado de São Paulo. 
+                    Foi fundado como uma equipe de futebol no dia 1 de setembro de 1910 por um grupo de operários do bairro Bom Retiro. Seu nome foi inspirado no 
+                    Corinthian FC de Londres, que excursionava pelo Brasil.
+                </blockquote>
+            </li>
+            <li>Tag <i>font</i>: A tag era usada no HTML 4 para especificar a fonte, seu tamanho a cor do texto.</li>
+            <li>Tag <i>del</i>: A tag define um <del>texto que foi excluido</del> documento.</li>
+            <li>Tag <i>abbr</i>: A tag define uma abreviação ou um acrônimo, como <abbr title="Hyper Text Markup Language">HTML</abbr>, 
+                <abbr title="Cascading Style Sheet">CSS</abbr> ou <abbr title="Digital Innovation One">DIO</abbr>.
+            </li>
+        </ul>
+    </p>
+    
+    <small><a href="#sumary">< Voltar ao início</a></small>
+
+    <h2 id="links">Links de referências:</h2>
+
+    <ol>
+        <li><a href="http://dio.me" target="_blank">DIO.ME</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools</a></li>
+        <li><a href="https://www.cloudflare.com/" target="_blank">CloudFlare</a></li>
+    </ol>
+    <small><a href="#sumary">< Voltar ao início</a></small>
+
+</body>
+</html>
