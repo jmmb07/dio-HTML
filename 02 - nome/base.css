@@ -1,0 +1,196 @@
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+ul, li
+{
+padding:0px; margin:0px;
+}
+.wrapper {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    padding: 0px;
+    width:15%;
+    display: flex;
+    align-items: top;
+    background-color: rgba(50, 137, 218, 0.521);
+}
+.menu ul {
+    width: 100%;
+}
+nav ul, 
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+nav .active,
+nav a:hover {
+    background-color: rgb(33, 129, 159);
+    color: #FFFFFF;
+}
+.header {
+    background-color:rgba(44, 6, 167, 0.336);
+    min-height: 150px;
+    display: flex;
+}
+.header a {
+    margin: auto;
+    display: block;
+}
+#imgLogo {
+    width: 400px;
+}
+.contenttitle {
+    display: flex;
+    background-color: white;
+    height: 30px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    color:rgb(33, 129, 159);
+    text-transform: uppercase;
+}
+.contentbody {
+    display: flex;
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.abouttext {
+    padding: 5px;
+    text-align: justify;
+    color: rgb(33, 129, 159);
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display:flex;
+    justify-items: center;
+}
+
+.aboutlist {
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;  
+    flex:1
+}
+.video {
+    margin:30px;
+}
+
+.aboutbody {
+    display: flex;
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+    justify-items: center;
+}
+.abouttext1,
+.abouttext2,
+.abouttext3 {
+    flex:1;
+    color:rgb(33, 129, 159);
+    padding: 10px;
+}
+.footer {
+    background-color: rgba(44, 6, 167, 0.336);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.footer_menu {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.fm1,
+.fm2,
+.fm3 {
+    flex:1;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.activefm {
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+.fm1 ul, li,
+.fm2 ul, li,
+.fm3 ul, li {
+    list-style: none;
+    height: 40px;
+    align-items: center;
+}
+.fm1 a,
+.fm2 a,
+.fm3 a{
+    display: block;
+    text-decoration: none;
+    text-transform: initial;
+    color: #ffffffbb;
+}
+.imgsocial {
+    position: relative;
+    top: 0.1em;
+    right: 0.3em;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+tr:nth-child(even) {
+    background-color: #388eb177;
+  }
+
+.adress {
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+}
+.mapa {
+    display:flex;
+    background-color: white;
+    justify-items: center;
+    padding: 20px;
+}
+.forms,
+.contact {
+    flex:1
+}
